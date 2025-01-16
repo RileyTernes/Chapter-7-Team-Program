@@ -1,6 +1,6 @@
 # Chapter-7-Team-Program
-# Program Name
-Team member 1, Team member 2, Team member 3
+# Ezee Dice Simulator
+Riley, Asher, Max
 
 ## <program_name> Description
 Here is where you describe what the program does
