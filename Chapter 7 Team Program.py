@@ -17,12 +17,6 @@ def roll_die():
     #Returns a random integer from 1 to 6
     number = random.randint(1, 6)
     return number
-    
-def roll_die():
-    #Accepts no arguments
-    #Returns a random integer from 1 to 6
-
-
 
 def first_roll():
     #Accepts no arguments
