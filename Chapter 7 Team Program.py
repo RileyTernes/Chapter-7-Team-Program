@@ -17,6 +17,12 @@ def roll_die():
     #Returns a random integer from 1 to 6
     number = random.randint(1, 6)
     return number
+    
+def roll_die():
+    #Accepts no arguments
+    #Returns a random integer from 1 to 6
+
+
 
 def first_roll():
     #Accepts no arguments
@@ -28,15 +34,17 @@ def first_roll():
         number = roll_die()
         dice.append(number)
     return dice
+  
 def count_frequency(dice, number):
     #Accepts a list of 12 random integers and a target value
     #Returns how often that target value occurs in the list
 
-    pass
+
 def find_mode(dice):
     #Accepts a list of dice.
     #Uses count_frequency(dice, number) to determine how often each number occurs.
     #Returns the mode
+
 
     pass
 def list_unmatched_dice(dice, mode):
@@ -50,15 +58,29 @@ def list_unmatched_dice(dice, mode):
             index_list.append(index)
         else:
             
+
+
+def list_unmatched_dice(dice):
+    #Accepts a list of dice
+    #Determines which dice need rerolled
+    #Returns a list of indexes to reroll
+
+
 def reroll_one(dice, index):
     #Accepts a list of dice and an index.
     #Uses roll_die to reroll that index
     #Returns a new list with that index rerolled
 
+
     pass
+
+
+
 def reroll_many(dice):
     #Accepts a list of dice
     #Calls find_mode(), list_unmatched_dice(), and reroll_one() to reroll each die != the mode.
     #Returns a list of rerolled dice.
+
     
     pass
+
