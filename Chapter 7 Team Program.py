@@ -3,8 +3,7 @@
 def main():
     #accepts no arguments
     #calls all functions to play the number of games specified
-    dice = first_roll()
-    number = len(my_list)
+    pass
     
     
 def output_dice(dice):
@@ -59,3 +58,14 @@ def reroll_many(dice):
     #Calls find_mode(), list_unmatched_dice(), and reroll_one() to reroll each die != the mode.
     #Returns a list of rerolled dice.
     pass
+    
+    #obtaining a mode by running find_mode
+    mode = find_mode(dice)
+    #obtaining index list by running list_unmatched_dice
+    unmatched = list_unmatched_dice(dice)
+    #rerolling dice
+    for index in unmatched:
+        dice[index] = reroll_die()
+    
+    
+    return dice
