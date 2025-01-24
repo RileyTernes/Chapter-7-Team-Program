@@ -8,11 +8,19 @@ def main():
     #calls all functions to play the number of games specified
     
     pass
-def output_dice(roll_die):
+
+def output_dice(dice):
     #Accepts dice
     #Outputs each die in the list
-    roll_die()
-    return roll_die
+    #output dice accepts dice
+    #it prints the dice
+    #Max-1st merge
+
+    print("Current Dice Roll:")
+    for die in dice:
+        print(die, end=" ")
+    print()
+    
 def roll_die():
     #Accepts no arguments
     #Returns a random integer from 1 to 6
