@@ -77,8 +77,10 @@ def reroll_one(dice, index):
     #Accepts a list of dice and an index.
     #Uses roll_die to reroll that index
     #Returns a new list with that index rerolled
-    find_mode()
-    roll_die()
+    #Max-2nd merge
+
+    dice[index] = roll_die()
+    return dice
 
 
 
