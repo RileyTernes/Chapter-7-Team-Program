@@ -41,7 +41,11 @@ def first_roll():
 def count_frequency(dice, number):
     #Accepts a list of 12 random integers and a target value
     #Returns how often that target value occurs in the list
-    pass
+    occurence = 0
+    for die in dice:
+        if die == number:
+            occurence += 1
+    return occurence
 
 
 def find_mode(first_roll):
