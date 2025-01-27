@@ -70,11 +70,7 @@ def list_unmatched_dice(dice, mode):
             pass
 
 
-def list_unmatched_dice(dice):
-    #Accepts a list of dice
-    #Determines which dice need rerolled
-    #Returns a list of indexes to reroll
-    pass
+
 
 
 def reroll_one(dice, index):
