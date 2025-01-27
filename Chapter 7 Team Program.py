@@ -66,8 +66,8 @@ def list_unmatched_dice(dice, mode):
         if num != mode:
             index = dice.index(num)
             index_list.append(index)
-        else:
-            pass
+            
+    return index_list
 
 
 
