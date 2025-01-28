@@ -52,14 +52,19 @@ def find_mode(dice):
     #Accepts a list of dice.
     #Uses count_frequency(dice, number) to determine how often each number occurs.
     #Returns the mode
+    roll = 1
     frequency = 0
-    number = int[1, 2, 3, 4, 5, 6]
+    number = 1
     for die in [1,2,3,4,5,6]:
-        if frequency > number:
+        if frequency > roll:
             mode = number
         frequency = count_frequency(dice, number)
-        print(frequency)
-    print(f"\n{mode}")
+        roll = roll + 1
+        number = number + 1
+       
+    mode = mode - 1
+    return mode
+    
 
 
 
