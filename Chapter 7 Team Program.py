@@ -48,15 +48,26 @@ def count_frequency(dice, number):
     return occurence
 
 
-def find_mode(first_roll):
+def find_mode(dice):
     #Accepts a list of dice.
     #Uses count_frequency(dice, number) to determine how often each number occurs.
     #Returns the mode
-    first_roll()
-    count_frequency(dice, number)
+    roll = 1
+    frequency = 0
+    number = 1
+    for die in [1,2,3,4,5,6]:
+        if frequency > roll:
+            mode = number
+        frequency = count_frequency(dice, number)
+        roll = roll + 1
+        number = number + 1
+       
+    mode = mode - 1
+    return mode
+    
 
 
-    pass
+
 def list_unmatched_dice(dice, mode):
     #Accepts a list of dice
     #Determines which dice need rerolled
