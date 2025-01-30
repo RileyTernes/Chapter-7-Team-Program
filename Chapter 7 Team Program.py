@@ -6,8 +6,16 @@ import random
 def main():
     #accepts no arguments
     #calls all functions to play the number of games specified
-    
-    pass
+    dice = first_roll()
+    output_dice(dice)  
+       
+    roll_count = 1
+    while len(set(dice)) > 1:  
+        print(f"Roll {roll_count + 1}")
+        dice = reroll_many(dice)
+        output_dice(dice)  
+        roll_count += 1
+        
 
 def output_dice(dice):
     #Accepts dice
@@ -19,6 +27,7 @@ def output_dice(dice):
     print("Current Dice Roll:")
     for die in dice:
         print(die, end=" ")
+              
     print()
     
 def roll_die():
@@ -102,10 +111,10 @@ def reroll_many(dice):
     #obtaining a mode by running find_mode
     mode = find_mode(dice)
     #obtaining index list by running list_unmatched_dice
-    unmatched = list_unmatched_dice(dice)
+    unmatched = list_unmatched_dice(dice, mode)
     #rerolling dice
     for index in unmatched:
-        dice[index] = reroll_die()
+        dice[index] = roll_die()
     
     
     return dice
